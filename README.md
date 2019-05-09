@@ -1,27 +1,72 @@
-# MapreflexClientAngular
+# Mapreflex Client for Angular 7
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Angular wrapper for Mapreflex client
 
-## Development server
+## Documentation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> [Mapreflex client documentation](https://github.com/mapreflex/api-client).
 
-## Code scaffolding
+> [Api documentation](https://www.mapreflex.com/swagger-ui.html).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Instalation and usage
 
-## Build
+```
+npm install @mapreflex/api-client-angular --save
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+##### Load the module for your app
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Providing the global configuration is optional and when used you should only provide the configuration in your root module.
 
-## Running end-to-end tests
+```
+import {MapreflexModule, Options} from '@mapreflex/api-client-angular';
+const options: Options = {
+  apiKey: 'MAPRELFEX_API_KEY'
+};
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+@NgModule({
+  ...
+  imports: [
+    MapreflexModule.forRoot(options)
+  ]
+  ...
+})
+```
 
-## Further help
+##### Inject service for your component
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+import {MapreflexServise} from '@mapreflex/api-client-angular'
+
+@Component()
+class appComponent {
+  constructor(private mapreflexService: MapreflexService) {}
+}
+```
+
+### Contribute
+
+#### Building the library
+Run npm install on repository root
+```
+npm install
+```
+Run npm install on library folder 
+```
+cd projects/mapreflex/api-client-angular
+npm install
+npm run build-lib
+```
+
+#### Link library
+```
+npm run link-lib
+```
+#### Run or Build tester app
+```
+npm run tester-serve
+npm run tester-build
+```
+## Tests
+TBD

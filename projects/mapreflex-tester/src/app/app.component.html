@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Mapreflex client
+  </h1>
+</div>
+<h2>States</h2>
+<ul>
+  <li *ngFor="let state of states$ | async">
+    {{state.name}} | {{state.stusab}}
+  </li>
+</ul>
+

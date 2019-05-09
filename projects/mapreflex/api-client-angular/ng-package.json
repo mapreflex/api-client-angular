@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../../dist/mapreflex/api-client-angular",
+  "lib": {
+    "entryFile": "src/public-api.ts",
+    "externals": {
+      "@mapreflex/api-client": "@mapreflex/api-client",
+      "@mapreflex/api-client/types": "@mapreflex/api-client/types"
+    }
+  },
+  "whitelistedNonPeerDependencies": [
+    "@mapreflex/api-client"
+  ]
+}

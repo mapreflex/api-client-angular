@@ -9,6 +9,7 @@
 
 # dependencies
 /node_modules
+/projects/mapreflex/api-client-angular/node_modules
 
 # profiling files
 chrome-profiler-events.json
