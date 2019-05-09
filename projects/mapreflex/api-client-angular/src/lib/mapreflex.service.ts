@@ -119,16 +119,6 @@ export class MapreflexService {
   }
 
   /**
-   * @deprecated
-   * @param countyNames
-   * @return FeatureCollection<MultiPolygon, CountyProperties>
-   */
-  getCountiesByCountyNames(countyNames: string[]): Observable<FeatureCollection<MultiPolygon, CountyProperties>> {
-
-    return from(this.api.counties.getByCountyNames(countyNames));
-  }
-
-  /**
    * @param stateAb (NY,KY,AI, etc)
    * @return FeatureCollection<MultiPolygon, CountyProperties>
    */
