@@ -8,12 +8,15 @@ Angular wrapper for Mapreflex client
 
 > [Api documentation](https://www.mapreflex.com/swagger-ui.html).
 
-### Instalation and usage
+### API KEY
+
+You should generate the api key on [Mapreflex cabinet](https://www.mapreflex.com)
+
+### Installation and usage
 
 ```
 npm install @mapreflex/api-client-angular --save
 ```
-
 
 ##### Load the module for your app
 
