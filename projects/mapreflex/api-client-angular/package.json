@@ -1,0 +1,32 @@
+{
+  "name": "@mapreflex/api-client-angular",
+  "version": "0.0.1",
+  "description": "Mapreflex angular api client",
+  "keywords": [
+    "mapreflex",
+    "angular api client",
+    "angular"
+  ],
+  "author": "Andrii Martyniuk <amartyniuk@codevision.com.ua>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapreflex/api-client-angular"
+  },
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "dependencies": {
+    "@mapreflex/api-client": "^0.0.1"
+  }
+}
